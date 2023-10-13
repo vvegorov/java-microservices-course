@@ -23,12 +23,14 @@ public class ObjectFactory {
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: io.slurm.cources.currency.schema
+     *
      */
     public ObjectFactory() {
     }
 
     /**
      * Create an instance of {@link ValCurs }
+     *
      */
     public ValCurs createValCurs() {
         return new ValCurs();
@@ -36,6 +38,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ValCurs.Valute }
+     *
      */
     public ValCurs.Valute createValCursValute() {
         return new ValCurs.Valute();

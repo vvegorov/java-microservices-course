@@ -24,8 +24,7 @@ public class CbrCurrencyRateClient implements HttpCurrencyDateRateClient {
 
     @Override
     public String requestByDate(LocalDate date) {
-//        var baseUrl = clientCfg.getUrl();
-        var baseUrl = "http://cbr.ru/scripts/XML_daily.asp";
+        var baseUrl = clientCfg.getUrl();
         var client = HttpClient.newHttpClient();
         var url = buildUriRequest(baseUrl, date);
         try {
